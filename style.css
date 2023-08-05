@@ -243,11 +243,21 @@ body {
     .email-input-container {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
         height: 120vh;
         margin-top: 0px;
         border-radius: 0px;
     }
+
+
+    .list-of-benefits {
+        width: 80%;
+    }
+
+    .left-side .little-info {
+        width: 80%;
+    }
+
 
     .desktop-picture {
         display: none;
@@ -259,20 +269,29 @@ body {
 
     .left-side {
         width: 95%;
+        margin: auto;
     }
 
     .thanks-container {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         border-radius: 0px;
         margin-top: 0px;
+    }
+
+    .form-side .email-label {
+        /* border: 1px solid blue; */
+        width: 80%;
+    }
+    
+    .form-side .email-input {
+        width: 80%;
+        height: 40px;
     }
     
     .thanks-container .icon-container {
         /* border: 1px solid saddlebrown; */
         width: 80%;
-        margin: auto;
-        margin-top: 25px;
     }
     
     .thanks-container .icon-container img {
@@ -283,4 +302,9 @@ body {
         margin-top: 200px;
     }
 
+    .form-side .subscribe-btn {
+        border: none;
+        width: 80%;
+        height: 40px;
+    }
 }
