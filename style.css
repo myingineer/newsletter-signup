@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+}
+
+.email-input-container {
+    /* border: 2px solid salmon; */
+    display: flex;
+    /* display: none; */
+    flex-direction: row;
+    width: 65%;
+    margin: auto;
+    height: 80vh;
+    margin-top: 55px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.mobile-picture {
+    display: none;
+}
+
+.left-side {
+    /* border: 2px solid black; */
+    width: 50%;
+    height: 100%;
+}
+
+.left-side h1 {
+    /* border: 1px solid olive; */
+    width: max-content;
+    margin: auto;
+    margin-top: 60px;
+    font-size: 3em;
+    color: hsl(234, 29%, 20%);
+}
+
+.left-side .little-info {
+    /* border: 1px solid orangered; */
+    width: 76%;
+    margin: auto;
+    font-size: 0.88em;
+    margin-top: 20px;
+    color: hsl(234, 29%, 20%);
+}
+
+.benefits {
+    margin-top: 20px;
+}
+
+.list-of-benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid blue; */
+    width: 76%;
+    margin: auto;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 550;
+}
+
+.list-of-benefits img {
+    width: 25px;
+    height: 25px;
+}
+
+.list-of-benefits p {
+    font-size: 0.8em;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* border: 2px solid seagreen; */
+}
+
+.right-side img {
+    height: 480px;
+    width: 500px;
+    float: right;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-side .email-label {
+    /* border: 1px solid blue; */
+    width: 76%;
+    margin: auto;
+    margin-top: 20px;
+    color: hsl(234, 29%, 20%);
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.form-side .email-input {
+    width: 72%;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 15px;
+    border: 0.5px solid black;
+    border-radius: 3px;
+}
+
+.form-side .email-input:hover {
+    cursor: pointer;
+}
+
+.form-side .email-input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: hsl(231, 7%, 60%);
+}
+.top {
+    /* border: 1px solid salmon; */
+    width: 76%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.error-state {
+    width: 76%;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+    font-size: 0.75em;
+    display: none;
+    margin-left: 95px;
+}
+
+.error {
+    border: 1px solid hsl(4, 100%, 67%);
+    background-color: hsl(228, 18%, 89%);
+    color: red;
+}
+
+.error::-webkit-input-placeholder {
+    color: hsl(4, 100%, 67%);
+}
+
+.form-side .subscribe-btn {
+    border: none;
+    width: 76.9%;
+    margin: auto;
+    margin-top: 25px;
+    height: 38px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.form-side .subscribe-btn:hover {
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+.form-side .subscribe-btn:focus {
+    border: none;
+}
+
+.thanks-container {
+    /* border: 2px solid darkred; */
+    width: 30%;
+    height: 60vh;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 100px;
+    display: none;
+}
+
+.thanks-container .icon-container {
+    /* border: 1px solid saddlebrown; */
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.thanks-container .icon-container img {
+    margin-top: 30px;
+}
+
+.thanks-container h1 {
+    /* border: 1px solid lawngreen; */
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 2.5em;
+    color: hsl(234, 29%, 20%);
+}
+
+.thanks-container .information {
+    width: 80%;
+    /* border: 1px solid violet; */
+    margin: auto;
+    margin-top: 15px;
+    color: hsl(234, 29%, 20%);
+    font-size: 0.95em;
+}
+
+.thanks-container .information .dynamic-mail {
+    font-weight: bold;
+}
+
+.thanks-container .dismiss-btn {
+    border: none;
+    display: block;
+    width: 80%;
+    height: 43px;
+    margin: auto;
+    margin-top: 13px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.thanks-container .dismiss-btn:hover {
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+
+@media only screen and (max-width: 500px) {
+    .email-input-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 120vh;
+        margin-top: 0px;
+        border-radius: 0px;
+    }
+
+    .desktop-picture {
+        display: none;
+    }
+
+    .mobile-picture {
+        display: block;
+    }
+
+    .left-side {
+        width: 95%;
+    }
+
+    .thanks-container {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+    
+    .thanks-container .icon-container {
+        /* border: 1px solid saddlebrown; */
+        width: 80%;
+        margin: auto;
+        margin-top: 25px;
+    }
+    
+    .thanks-container .icon-container img {
+        margin-top: 80px;
+    }
+    
+    .thanks-container .dismiss-btn {
+        margin-top: 200px;
+    }
+
+}

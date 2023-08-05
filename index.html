@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>NewsLetter</title>
+</head>
+<body>
+    
+    <div class="email-input-container">
+        <img class="mobile-picture" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+        <div class="left-side">
+            <h1>
+                Stay updated!
+            </h1>
+
+            <p class="little-info">
+                Join 60,000+ product managers receiving monthly updates on:
+            </p>
+
+            <div class="benefits">
+                <div class="list-of-benefits">
+                    <img src="./assets/images/icon-success.svg" alt="">
+                    <p>Product discovery and building what matters</p>
+                </div>
+
+                <div class="list-of-benefits">
+                    <img src="./assets/images/icon-success.svg" alt="">
+                    <p>Measuring to ensure updates are a success</p>
+                </div>
+
+                <div class="list-of-benefits">
+                    <img src="./assets/images/icon-success.svg" alt="">
+                    <p>And much more!</p>
+                </div>
+
+            </div>
+            
+
+            <form class="form-side">
+                <div class="top">
+                    <label for="email" class="email-label">Email address</label>
+                    <span id="error" class="error-state shown">Valid email required</span>
+                </div>
+                <input class="email-input js-input" type="email" placeholder="email@company.com">
+                <button class="subscribe-btn js-subscribe-btn" type="submit">Subscribe to monthly newsletter</button>
+            </form>
+            
+        </div>
+
+        <div class="right-side">
+            <img class="desktop-picture" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+        </div>
+
+    </div>
+
+
+    <div class="thanks-container">
+        <div class="icon-container">
+            <img src="./assets/images/icon-success.svg" alt="">
+        </div>
+
+        <h1>Thanks for subscribing!</h1>
+
+        <p class="information">
+            A confirmation email has been sent to <span class="dynamic-mail js-dynamic-mail"></span>.
+            Please open it and click the button inside to confirm your subscription.
+        </p>
+
+        <button class="dismiss-btn js-dismiss-btn">Dismiss message</button>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
